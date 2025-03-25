@@ -1,0 +1,130 @@
+/* Uploads container styles */
+.uploads-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.uploads-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Table styles */
+.uploads-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.uploads-table th,
+.uploads-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.uploads-table th {
+  background-color: #f4f4f4;
+}
+
+/* Modal styles */
+.upload-modal {
+  max-width: 500px;
+}
+
+/* Form styles within modal */
+.upload-modal form {
+  margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.upload-modal .modal-footer {
+  justify-content: center;
+}
+
+.upload-modal .modal-footer button {
+  margin-left: 10px;
+}
+
+/* Edit Form styles */
+.edit-form {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.edit-form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.edit-form-label {
+  font-weight: bold;
+}
+
+.edit-form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .uploads-container {
+    padding: 10px;
+  }
+
+  .uploads-title {
+    font-size: 20px;
+  }
+
+  .upload-modal {
+    max-width: 90%;
+  }
+
+  .edit-form {
+    padding: 15px;
+  }
+
+  .edit-form-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .uploads-container {
+    padding: 5px;
+  }
+
+  .uploads-title {
+    font-size: 18px;
+  }
+
+  .upload-modal {
+    max-width: 100%;
+  }
+
+  .edit-form {
+    padding: 10px;
+  }
+
+  .edit-form-title {
+    font-size: 16px;
+  }
+}

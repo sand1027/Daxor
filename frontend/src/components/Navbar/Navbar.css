@@ -1,0 +1,166 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #0b0f35;
+  color: white;
+  position: static;
+  top: 1px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.profile-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.profile-icon:hover {
+  opacity: 0.8;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 200px;
+  background-color: #0b0f35;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.menu-item {
+  padding: 12px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #f5f5f5;
+  color: #0b0f35;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.navbar-menu li:hover {
+  color: #1679ab;
+}
+
+.navbar-menu.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #0b0f35;
+  padding: 15px 0;
+  z-index: 10;
+}
+
+.navbar-menu.show li {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.navbar button {
+  background-color: #1679ab;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #12628e;
+}
+
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+  .navbar.active .navbar-menu {
+    display: flex;
+  }
+
+  .navbar-menu.show {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
+
+  .profile-icon-container {
+    display: flex; /* Ensure the profile icon container is visible on small screens */
+    /* align-items: center; */
+    margin-left: 10px; /* Add some spacing between menu icon and profile icon */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .navbar-menu.show li {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .profile-menu {
+    min-width: 150px;
+  }
+}

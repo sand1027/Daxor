@@ -1,0 +1,79 @@
+/* ApplicationDevelopment.css */
+
+.applicationdevelopment {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.applicationdevelopment__header h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+.applicationdevelopment__content ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.applicationdevelopment__content li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+.applicationdevelopment__content p {
+  margin-top: 20px;
+  color: #555555;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .applicationdevelopment {
+    padding: 15px;
+  }
+
+  .applicationdevelopment__header h2 {
+    font-size: 1.5em;
+  }
+
+  .applicationdevelopment__content ol {
+    padding-left: 15px;
+  }
+
+  .applicationdevelopment__content li {
+    font-size: 0.9em;
+  }
+
+  .applicationdevelopment__content p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .applicationdevelopment {
+    padding: 10px;
+  }
+
+  .applicationdevelopment__header h2 {
+    font-size: 1.2em;
+  }
+
+  .applicationdevelopment__content ol {
+    padding-left: 10px;
+  }
+
+  .applicationdevelopment__content li {
+    font-size: 0.8em;
+  }
+
+  .applicationdevelopment__content p {
+    font-size: 0.8em;
+  }
+}

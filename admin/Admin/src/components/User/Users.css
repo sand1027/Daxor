@@ -1,0 +1,77 @@
+/* Admin Panel Layout */
+.admin-panel {
+  display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #343a40;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.sidebar a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+}
+
+/* Users Content Styling */
+.users-content {
+  margin-left: 200px; /* Sidebar width */
+  padding: 2rem;
+  width: 100%;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  margin-top: 4rem;
+}
+
+/* Users Table Styling */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #dee2e6;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.users-table th {
+  background-color: #343a40;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}

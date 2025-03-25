@@ -1,0 +1,107 @@
+/* Base styles for ApplicantForm */
+.applicant-form {
+  font-family: Arial, sans-serif;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.applicant-form h3 {
+  color: #0b0f35;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.applicant-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.applicant-details label {
+  margin-bottom: 8px;
+  color: #0b0f35;
+  font-weight: bold;
+}
+
+.applicant-details input,
+.applicant-details select,
+.applicant-details textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%; /* Ensure inputs take full width by default */
+}
+
+.applicant-details select {
+  width: 100%;
+}
+
+.applicant-details textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.applicant-details input[type="file"] {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.applicant-details button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.applicant-details button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  /* Adjustments for tablets */
+  .applicant-form {
+    padding: 15px;
+  }
+
+  .applicant-details input,
+  .applicant-details select,
+  .applicant-details textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px; /* Decrease font size for better fit */
+  }
+
+  .applicant-details button {
+    padding: 10px 16px;
+    font-size: 14px; /* Decrease font size for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for mobile phones */
+  .applicant-form {
+    padding: 10px;
+  }
+
+  .applicant-details input,
+  .applicant-details select,
+  .applicant-details textarea {
+    padding: 6px;
+    margin-bottom: 8px;
+    font-size: 12px; /* Further decrease font size for better fit */
+  }
+
+  .applicant-details button {
+    padding: 8px 14px;
+    font-size: 12px; /* Further decrease font size for better fit */
+  }
+}

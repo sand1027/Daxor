@@ -1,0 +1,74 @@
+/* Thank You Container */
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Thank You Content */
+.thank-you-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+}
+
+.thank-you-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0b0f35; /* Adjust to your preferred color */
+}
+
+.thank-you-message {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+.btn-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0b0f35; /* Adjust to your preferred color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+  background-color: #102c57; /* Adjust hover color */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .thank-you-content {
+    padding: 15px;
+  }
+
+  .thank-you-heading {
+    font-size: 20px;
+  }
+
+  .thank-you-message {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .thank-you-content {
+    padding: 10px;
+  }
+
+  .thank-you-heading {
+    font-size: 18px;
+  }
+
+  .thank-you-message {
+    font-size: 14px;
+  }
+}

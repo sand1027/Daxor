@@ -1,0 +1,59 @@
+.profile {
+  max-width: 500px; /* Limit the maximum width for better readability */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #007bff; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile {
+    max-width: 90%; /* Make the profile take up more space on smaller screens */
+  }
+}
+
+.message {
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background for messages */
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+  margin-bottom: 15px; /* Add some margin for visual separation */
+}

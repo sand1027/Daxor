@@ -1,0 +1,79 @@
+.business-inputs {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.business-inputs h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.business-details {
+  display: grid;
+  gap: 16px;
+}
+
+.business-details label {
+  font-weight: bold;
+}
+
+.business-details input,
+.business-details textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.business-details input[type="file"] {
+  padding: 10px 0; /* Adjust padding for file input */
+  border: none;
+}
+
+.business-details input:focus,
+.business-details textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.business-details button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.business-details button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .business-inputs {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .business-inputs {
+    margin: 30px auto;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .business-details button {
+    font-size: 16px;
+  }
+}

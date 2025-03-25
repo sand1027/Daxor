@@ -1,0 +1,170 @@
+/* Header.css */
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #102c57; /* Dark blue background color */
+  color: white;
+}
+
+.header-contents {
+  max-width: 50%;
+}
+
+.header h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.header h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.header span {
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.header button {
+  margin: 1rem;
+  padding: 1rem;
+  width: 250px;
+  height: 50px;
+  background-color: #0b0f35; /* Dark blue button color */
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #12628e; /* Dark blue hover color */
+}
+
+.header img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Toast styles */
+.Toastify__toast-container {
+  width: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+@media (max-width: 768px) {
+  .Toastify__toast-container {
+    max-width: 95%; /* Adjust for smaller screens */
+  }
+
+  .header {
+    padding: 30px; /* Adjust header padding */
+  }
+
+  .header h2 {
+    font-size: 2.5rem; /* Decrease h2 font size */
+  }
+
+  .header button {
+    padding: 12px 25px; /* Adjust button padding */
+  }
+
+  .header img {
+    max-width: 80%; /* Adjust image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .Toastify__toast-container {
+    width: 98%; /* Adjust for mobile devices */
+  }
+
+  .header {
+    flex-direction: column-reverse; /* Stack items in column on small screens */
+    text-align: center;
+    padding: 20px; /* Adjust header padding */
+  }
+
+  .header-contents {
+    max-width: 100%; /* Full width for header contents */
+    margin-bottom: 20px;
+  }
+
+  .header h2 {
+    font-size: 2rem; /* Decrease h2 font size */
+  }
+
+  .header button {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 1rem; /* Decrease button font size */
+  }
+
+  .header img {
+    max-width: 100%; /* Full width for image */
+  }
+}
+
+/* Toast styles */
+.Toastify__toast {
+  background-color: #102c57 !important; /* Dark blue toast background */
+  color: white !important;
+  font-family: inherit !important; /* Inherit font from the rest of your site */
+  padding: 15px 20px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  width: 35rem !important;
+}
+
+.Toastify__toast--error {
+  border-left: 5px solid #dc3545; /* Red border for error toast */
+}
+
+.Toastify__toast--success {
+  border-left: 5px solid #28a745; /* Green border for success toast */
+}
+
+.Toastify__toast--info {
+  border-left: 5px solid #17a2b8; /* Blue border for info toast */
+}
+
+.Toastify__close-button {
+  color: white;
+  opacity: 0.8;
+  font-size: 18px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .Toastify__toast {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .Toastify__toast {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .Toastify__close-button {
+    font-size: 16px; /* Adjust close button size for smaller screens */
+  }
+}

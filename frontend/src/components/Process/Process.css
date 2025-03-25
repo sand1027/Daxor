@@ -1,0 +1,164 @@
+/* Process.css */
+
+.how-it-works {
+  text-align: center;
+  padding: 20px;
+}
+
+.process-header {
+  margin-bottom: 40px;
+}
+
+.process-title h1 {
+  display: inline-block;
+  text-align: center;
+  color: #0b0f35;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.step {
+  text-align: center;
+  margin: 20px;
+  position: relative; /* Positioning for dots */
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-size: 24px;
+  color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.circle:hover {
+  box-shadow: 0 0 20px 5px var(--glow-color); /* Glow effect on hover */
+}
+
+.glow-purple {
+  --glow-color: #8e44ad;
+  background: #8e44ad;
+  box-shadow: 0 0 10px rgba(142, 68, 173, 0.5);
+}
+
+.glow-red {
+  --glow-color: #e74c3c;
+  background: #e74c3c;
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+}
+
+.glow-green {
+  --glow-color: #27ae60;
+  background: #27ae60;
+  box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
+}
+
+.glow-yellow {
+  --glow-color: #f1c40f;
+  background: #f1c40f;
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.step:first-child .dot {
+  display: none; /* Hide dot before first step */
+}
+
+@media (max-width: 1024px) {
+  .description {
+    max-width: 80%;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
+  }
+
+  .step {
+    margin: 20px 10px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    max-width: 90%;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .step {
+    margin: 15px;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    max-width: 100%;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .step {
+    margin: 10px 0;
+  }
+
+  .dot {
+    display: none;
+  }
+}

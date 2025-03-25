@@ -1,0 +1,80 @@
+/* DataLake.css */
+
+.datalake {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.datalake__header h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+.datalake__content p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555555;
+  text-align: justify;
+}
+
+.datalake__content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.datalake__content li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+@media (max-width: 768px) {
+  .datalake {
+    padding: 15px;
+  }
+
+  .datalake__header h2 {
+    font-size: 1.5em;
+  }
+
+  .datalake__content ul {
+    padding-left: 15px;
+  }
+
+  .datalake__content li {
+    font-size: 0.9em;
+  }
+
+  .datalake__content p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .datalake {
+    padding: 10px;
+  }
+
+  .datalake__header h2 {
+    font-size: 1.2em;
+  }
+
+  .datalake__content ul {
+    padding-left: 10px;
+  }
+
+  .datalake__content li {
+    font-size: 0.8em;
+  }
+
+  .datalake__content p {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,80 @@
+/* AIAnalytics.css */
+
+.aianalytics {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.aianalytics__header h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+.aianalytics__content p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555555;
+  text-align: justify;
+}
+
+.aianalytics__content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.aianalytics__content li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+@media (max-width: 768px) {
+  .aianalytics {
+    padding: 15px;
+  }
+
+  .aianalytics__header h2 {
+    font-size: 1.5em;
+  }
+
+  .aianalytics__content ul {
+    padding-left: 15px;
+  }
+
+  .aianalytics__content li {
+    font-size: 0.9em;
+  }
+
+  .aianalytics__content p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .aianalytics {
+    padding: 10px;
+  }
+
+  .aianalytics__header h2 {
+    font-size: 1.2em;
+  }
+
+  .aianalytics__content ul {
+    padding-left: 10px;
+  }
+
+  .aianalytics__content li {
+    font-size: 0.8em;
+  }
+
+  .aianalytics__content p {
+    font-size: 0.8em;
+  }
+}
